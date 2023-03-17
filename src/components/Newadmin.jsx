@@ -6,12 +6,12 @@ function Newadmin() {
   <div class="wrapper">
 
     
-    {/* <div class="preloader flex-column justify-content-center align-items-center">
+    <div class="preloader flex-column justify-content-center align-items-center">
       <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60"/>
-    </div> */}
+    </div>
 
     
-    {/* <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
       
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -154,7 +154,7 @@ function Newadmin() {
           </a>
         </li>
       </ul>
-    </nav> */}
+    </nav>
     
 
     
@@ -358,7 +358,7 @@ function Newadmin() {
     
     <div class="content-wrapper">
       
-      <div class="content-header">
+      {/* <div class="content-header">
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
@@ -448,7 +448,7 @@ function Newadmin() {
 
         </div>
       </section>
-      
+       */}
 
       
       <section class="content-header">
