@@ -1,63 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+// <!DOCTYPE html>
+// <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> JAG | Admin</title>
+// <head>
+//   <meta charset="utf-8">
+//   <meta name="viewport" content="width=device-width, initial-scale=1">
+//   <title> JAG | Admin</title>
 
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <!-- iCheck -->
-  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <!-- summernote -->
-  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
-  <!-- DataTables -->
-  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+//  
 
-</head>
+// </head>
 
-<body class="hold-transition sidebar-mini layout-fixed">
+import React from 'react'
+
+function Admin_dashboard() {
+  return (
+<div class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
 
-    <!-- Preloader -->
+    
     <div class="preloader flex-column justify-content-center align-items-center">
-      <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+      <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60"/>
     </div>
 
-    <!-- Navbar -->
+    
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-      <!-- Left navbar links -->
+      
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="index3.html" class="nav-link">Home</a>
+          <a href="index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="#" class="nav-link">Contact</a>
+          <a href="login.html" class="nav-link">Login</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="register.html" class="nav-link">Register</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="admin_dashboard.html" class="nav-link">Admin</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="agent_dashboard.html" class="nav-link">Agent</a>
         </li>
       </ul>
 
-      <!-- Right navbar links -->
+      
       <ul class="navbar-nav ml-auto">
-        <!-- Navbar Search -->
+        
         <li class="nav-item">
           <a class="nav-link" data-widget="navbar-search" href="#" role="button">
             <i class="fas fa-search"></i>
@@ -65,7 +56,7 @@
           <div class="navbar-search-block">
             <form class="form-inline">
               <div class="input-group input-group-sm">
-                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search"/>
                 <div class="input-group-append">
                   <button class="btn btn-navbar" type="submit">
                     <i class="fas fa-search"></i>
@@ -79,7 +70,7 @@
           </div>
         </li>
 
-        <!-- Messages Dropdown Menu -->
+        
         <li class="nav-item dropdown">
           <a class="nav-link" data-toggle="dropdown" href="#">
             <i class="far fa-comments"></i>
@@ -87,9 +78,9 @@
           </a>
           <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
             <a href="#" class="dropdown-item">
-              <!-- Message Start -->
+              
               <div class="media">
-                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle"/>
                 <div class="media-body">
                   <h3 class="dropdown-item-title">
                     Brad Diesel
@@ -99,13 +90,13 @@
                   <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                 </div>
               </div>
-              <!-- Message End -->
+              
             </a>
             <div class="dropdown-divider"></div>
             <a href="#" class="dropdown-item">
-              <!-- Message Start -->
+              
               <div class="media">
-                <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3"/>
                 <div class="media-body">
                   <h3 class="dropdown-item-title">
                     John Pierce
@@ -115,13 +106,13 @@
                   <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                 </div>
               </div>
-              <!-- Message End -->
+              
             </a>
             <div class="dropdown-divider"></div>
             <a href="#" class="dropdown-item">
-              <!-- Message Start -->
+              
               <div class="media">
-                <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3"/>
                 <div class="media-body">
                   <h3 class="dropdown-item-title">
                     Nora Silvester
@@ -131,13 +122,13 @@
                   <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                 </div>
               </div>
-              <!-- Message End -->
+              
             </a>
             <div class="dropdown-divider"></div>
             <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
           </div>
         </li>
-        <!-- Notifications Dropdown Menu -->
+        
         <li class="nav-item dropdown">
           <a class="nav-link" data-toggle="dropdown" href="#">
             <i class="far fa-bell"></i>
@@ -176,32 +167,32 @@
         </li>
       </ul>
     </nav>
-    <!-- /.navbar -->
+    
 
-    <!-- Main Sidebar Container -->
+    
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
-      <!-- Brand Logo -->
+      
       <a href="index3.html" class="brand-link">
         <span class="brand-text font-weight-light">JAG</span>
         <span class="brand-text font-weight-light">Voting System</span>
       </a>
 
-      <!-- Sidebar -->
+      
       <div class="sidebar">
-        <!-- Sidebar user panel (optional) -->
+        
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
           <div class="image">
-            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image"/>
           </div>
           <div class="info">
             <a href="#" class="d-block">Alexander Pierce</a>
           </div>
         </div>
 
-        <!-- SidebarSearch Form -->
+        
         <div class="form-inline">
           <div class="input-group" data-widget="sidebar-search">
-            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search"/>
             <div class="input-group-append">
               <button class="btn btn-sidebar">
                 <i class="fas fa-search fa-fw"></i>
@@ -210,17 +201,15 @@
           </div>
         </div>
 
-        <!-- Sidebar Menu -->
+        
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+            
             <li class="nav-item">
-              <a href="./index.html" class="nav-link active">
+              <a href="admin_dashboard.html" class="nav-link active">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                   Dashboard
-                  <i class="right fas fa-angle-left"></i>
                 </p>
               </a>
             </li>
@@ -235,7 +224,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="pages/widgets.html" class="nav-link">
+                  <a href="register.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>
                       Add Agents
@@ -244,7 +233,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="all_agents.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>
                       View Agents
@@ -259,22 +248,22 @@
               <a href="#" class="nav-link">
                 <i class="nav-icon far fa-flag"></i>
                 <p>
-                  Candidates
+                  Election Post
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="pages/widgets.html" class="nav-link">
+                  <a href="election_post.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>
-                      Add Candidates
+                      Add Post
                       <span class="right badge badge-danger"><i class="fas fa-user m-0 mr-1"></i>New</span>
                     </p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="election_post.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>
                       View Candidates
@@ -295,7 +284,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="view_results.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>
                       Upload Results
@@ -304,7 +293,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="view_results.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>
                       View Results
@@ -321,7 +310,7 @@
 
 
 
-            <!-- <li class="nav-header">EXTRA</li>
+            
             <li class="nav-item">
               <a href="pages/gallery.html" class="nav-link">
                 <i class="nav-icon far fa-image"></i>
@@ -358,13 +347,13 @@
                   </a>
                 </li>
               </ul>
-            </li> -->
+            </li>
 
             <li class="nav-header mt-3">
               <hr class="dropdown-divider" />
             </li>
             <li class="nav-item ">
-              <a href="pages/calendar.html" class="nav-link">
+              <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-sign-out-alt"></i>
                 <p>
                   Logout
@@ -373,38 +362,38 @@
             </li>
           </ul>
         </nav>
-        <!-- /.sidebar-menu -->
+        
       </div>
-      <!-- /.sidebar -->
+      
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
+    
     <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
+      
       <div class="content-header">
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
               <h1 class="m-0">Admin Dashboard</h1>
-            </div><!-- /.col -->
+            </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item active">Dashboard</li>
               </ol>
             </div>
-          </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
+          </div>
+        </div>
       </div>
-      <!-- /.content-header -->
+      
 
-      <!-- Main content -->
+      
       <section class="content">
         <div class="container-fluid">
-          <!-- Small boxes (Stat box) -->
+          
           <div class="row">
             <div class="col-lg-3 col-6">
-              <!-- small box -->
+              
               <div class="small-box bg-info">
                 <div class="inner">
                   <h3>150</h3>
@@ -417,9 +406,9 @@
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
-            <!-- ./col -->
+            
             <div class="col-lg-3 col-6">
-              <!-- small box -->
+              
               <div class="small-box bg-success">
                 <div class="inner">
                   <h3>53<sup style="font-size: 20px">%</sup></h3>
@@ -432,9 +421,9 @@
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
-            <!-- ./col -->
+            
             <div class="col-lg-3 col-6">
-              <!-- small box -->
+              
               <div class="small-box bg-warning">
                 <div class="inner">
                   <h3>44</h3>
@@ -447,9 +436,9 @@
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
-            <!-- ./col -->
+            
             <div class="col-lg-3 col-6">
-              <!-- small box -->
+              
               <div class="small-box bg-danger">
                 <div class="inner">
                   <h3>65</h3>
@@ -462,18 +451,18 @@
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
-            <!-- ./col -->
+            
           </div>
-          <!-- /.row -->
+          
 
 
 
 
-        </div><!-- /.container-fluid -->
+        </div>
       </section>
-      <!-- /.content -->
+      
 
-      <!-- Content Header (Page header) -->
+      
       <section class="content-header">
         <div class="container-fluid">
           <div class="row mb-2">
@@ -481,10 +470,10 @@
               <h1>List of Registered Party Agents</h1>
             </div>
           </div>
-        </div><!-- /.container-fluid -->
+        </div>
       </section>
 
-      <!-- Main content -->
+      
       <section class="content">
         <div class="container-fluid">
           <div class="row">
@@ -499,7 +488,7 @@
                     Party Agents DataTable
                   </h3>
                 </div>
-                <!-- /.card-header -->
+                
                 <div class="card-body">
                   <table id="example1" class="table table-sm table-bordered table-striped">
                     <thead>
@@ -582,23 +571,23 @@
                     </tbody>
                   </table>
                 </div>
-                <!-- /.card-body -->
+                
               </div>
-              <!-- /.card -->
+              
             </div>
-            <!-- /.col -->
+            
           </div>
-          <!-- /.row -->
+          
         </div>
-        <!-- /.container-fluid -->
+        
       </section>
-      <!-- /.content -->
+      
 
 
       <hr class="bg-warning mx-3" />
 
 
-      <!-- Content Header (Page header) -->
+      
       <section class="content-header">
         <div class="container-fluid">
           <div class="row mb-2">
@@ -607,10 +596,10 @@
             </div>
           </div>
         </div>
-        <!-- /.container-fluid -->
+        
       </section>
 
-      <!-- Main content -->
+      
       <section class="content">
         <div class="container-fluid">
           <div class="row">
@@ -625,7 +614,7 @@
                     Updated Voters Result DataTable
                   </h3>
                 </div>
-                <!-- /.card-header -->
+                
                 <div class="card-body">
                   <table id="example11" class="table table-sm table-bordered table-striped">
                     <thead class="thead thead-dark">
@@ -669,20 +658,20 @@
                     </tbody>
                   </table>
                 </div>
-                <!-- /.card-body -->
+                
               </div>
-              <!-- /.card -->
+              
             </div>
-            <!-- /.col -->
+            
           </div>
-          <!-- /.row -->
+          
         </div>
-        <!-- /.container-fluid -->
+        
       </section>
-      <!-- /.content -->
+      
 
     </div>
-    <!-- /.content-wrapper -->
+    
 
 
     <footer class="main-footer">
@@ -693,149 +682,14 @@
       </div>
     </footer>
 
-    <!-- Control Sidebar -->
+    
     <aside class="control-sidebar control-sidebar-dark">
-      <!-- Control sidebar content goes here -->
+      
     </aside>
-    <!-- /.control-sidebar -->
+    
   </div>
-  <!-- ./wrapper -->
+</div>
+  )
+}
 
-  <!-- jQuery -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <!-- jQuery UI 1.11.4 -->
-  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-  <script>
-    $.widget.bridge('uibutton', $.ui.button)
-  </script>
-  <!-- Bootstrap 4 -->
-  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Sparkline -->
-  <script src="plugins/sparklines/sparkline.js"></script>
-  <!-- JQVMap -->
-  <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
-  <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-  <!-- jQuery Knob Chart -->
-  <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
-  <!-- daterangepicker -->
-  <script src="plugins/moment/moment.min.js"></script>
-  <script src="plugins/daterangepicker/daterangepicker.js"></script>
-  <!-- Tempusdominus Bootstrap 4 -->
-  <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-  <!-- Summernote -->
-  <script src="plugins/summernote/summernote-bs4.min.js"></script>
-  <!-- overlayScrollbars -->
-  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-  <!-- AdminLTE App -->
-  <script src="dist/js/adminlte.js"></script>
-  <!-- AdminLTE for demo purposes -->
-  <script src="dist/js/demo.js"></script>
-  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-  <script src="dist/js/pages/dashboard.js"></script>
-  <!-- DataTables  & Plugins -->
-  <script src="plugins/datatables/jquery.dataTables.min.js"></script>
-  <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-  <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-  <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-  <script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-  <script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-  <script src="plugins/jszip/jszip.min.js"></script>
-  <script src="plugins/pdfmake/pdfmake.min.js"></script>
-  <script src="plugins/pdfmake/vfs_fonts.js"></script>
-  <script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-  <script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
-  <script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-  <!-- jquery-validation -->
-  <script src="../../plugins/jquery-validation/jquery.validate.min.js"></script>
-  <script src="../../plugins/jquery-validation/additional-methods.min.js"></script>
-
-
-
-  <script>
-    $(function () {
-      $("#example1")
-        .DataTable({
-          responsive: true,
-          lengthChange: false,
-          autoWidth: false,
-          buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
-        })
-        .buttons()
-        .container()
-        .appendTo("#example1_wrapper .col-md-6:eq(0)");
-      $("#example11")
-        .DataTable({
-          responsive: true,
-          lengthChange: false,
-          autoWidth: false,
-          buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
-        })
-        .buttons()
-        .container()
-        .appendTo("#example11_wrapper .col-md-6:eq(0)");
-      $("#example2").DataTable({
-        paging: true,
-        lengthChange: false,
-        searching: false,
-        ordering: true,
-        info: true,
-        autoWidth: false,
-        responsive: true,
-      });
-      $.validator.setDefaults({
-        submitHandler: function () {
-          alert("Form successful submitted!");
-        }
-      });
-      $('#quickForm').validate({
-        rules: {
-          add_post: {
-            required: true,
-            text: true,
-          },
-          email: {
-            required: true,
-            email: true,
-          },
-          password: {
-            required: true,
-            minlength: 5
-          },
-          terms: {
-            required: true
-          },
-        },
-        messages: {
-          add_post: {
-            required: "Please provide a post. Empty string cannot be saved.",
-            email: "Please enter a valid email address"
-          },
-          email: {
-            required: "Please enter an email address.",
-            email: "Please enter a valid email address"
-          },
-          password: {
-            required: "Please provide a password",
-            minlength: "Your password must be at least 5 characters long"
-          },
-          terms: "Please accept our terms"
-        },
-        errorElement: 'span',
-        errorPlacement: function (error, element) {
-          error.addClass('invalid-feedback');
-          element.closest('.form-group').append(error);
-        },
-        highlight: function (element, errorClass, validClass) {
-          $(element).addClass('is-invalid');
-        },
-        unhighlight: function (element, errorClass, validClass) {
-          $(element).removeClass('is-invalid');
-        }
-      });
-    });
-  </script>
-
-</body>
-
-</html>
+export default Admin_dashboard;
