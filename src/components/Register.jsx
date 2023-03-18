@@ -1,3 +1,5 @@
+import { auth } from "./config/firebase"
+import { useState } from "react"
 
 function Registerpage() {
     return (

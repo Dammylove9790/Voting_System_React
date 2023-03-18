@@ -1,5 +1,22 @@
+import { auth } from "./config/firebase"
+import { createUserWithEmailAndPassword } from "firebase/auth"
+import { useState } from "react"
 
 function Loginpage() {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  const signIn = async () => {
+    try {
+    await createUserWithEmailAndPassword(auth, email, password)
+    console.log('success')
+
+
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
     return (
 <body class="hold-transition layout-top-nav layout-navbar-fixed bg-light">
   <div class="wrapper">
@@ -145,7 +162,7 @@ function Loginpage() {
                     <form id="quickForm" method="post">
                         <div class="row">
                             <div class="form-group input-group mb-3 col-12">
-                                <input type="email" class="form-control" name="email" placeholder="Email" />
+                                <input type="email" class="form-control" name="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
                                 <div class="input-group-append">
                                     <div class="input-group-text">
                                         <span class="fas fa-envelope"></span>
@@ -153,7 +170,7 @@ function Loginpage() {
                                 </div>
                             </div>
                             <div class="form-group input-group mb-4 col-12">
-                                <input type="password" class="form-control" name="password" placeholder="Password" />
+                                <input type="password" class="form-control" name="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
                                 <div class="input-group-append">
                                     <div class="input-group-text">
                                         <span class="fas fa-lock"></span>
@@ -164,7 +181,7 @@ function Loginpage() {
 
                         <div class="row justify-content-center">
                             <div class="col-12">
-                                <button type="submit" class="btn btn-success btn-block">
+                                <button type="submit" class="btn btn-success btn-block" onClick={ signIn } >
                                     Login
                                 </button>
                             </div>

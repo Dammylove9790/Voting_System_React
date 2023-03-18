@@ -1,9 +1,35 @@
+import { db } from "./config/firebase"
+import { useEffect, useState } from "react"
 import React from 'react'
 import Footer from './common/Footer'
 import Navbar from './common/Navbar'
 import Sidebar from './common/Sidebar'
+import { collection, getDoc, getDocs, docs, doc } from "firebase/firestore"
+
 
 function All_agents() {
+  const [agents, setAgents] = useState([])
+
+  const agentsCollectionRef = collection(db, "users")
+
+  useEffect(() => {
+    const getAllAgents = async () => {
+      try {
+      const data = await getDocs(agentsCollectionRef);
+      const grabData = data.docs.map((doc) => ({
+        ...doc.data(), id:doc.id,
+      }));
+      setAgents(grabData)
+      console.log(grabData)
+      } catch (error) {
+        console.log(error)
+      }
+    };
+    getAllAgents();
+  }, []);
+  
+
+
     return (
         <body class="hold-transition sidebar-mini layout-fixed">
       <div class="wrapper">        
@@ -46,12 +72,11 @@ function All_agents() {
                     Party Agents DataTable
                   </h3>
                 </div>
-                
+                {agents}
                 <div class="card-body">
                   <table id="example1" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>Agent ID</th>
                         <th>Name</th>
                         <th>Ward</th>
                         <th>Unit</th>
@@ -60,72 +85,25 @@ function All_agents() {
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>Zakariyah Muniru
-                        </td>
-                        <td>Ward 3</td>
-                        <td> 4 </td>
-                        <td>Yes</td>
-                        <td>
-                          <a href="#" class="btn btn-success btn-sm">View</a>
-                          <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                          <a href="#" class="btn btn-danger btn-sm">Remove</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Zakariyah Muniru
-                        </td>
-                        <td>Ward 1</td>
-                        <td> 4 </td>
-                        <td>Yes</td>
-                        <td>
-                          <a href="#" class="btn btn-success btn-sm">View</a>
-                          <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                          <a href="#" class="btn btn-danger btn-sm">Remove</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Titilope kamil
-                        </td>
-                        <td>Ward 3</td>
-                        <td> 4 </td>
-                        <td>Yes</td>
-                        <td>
-                          <a href="#" class="btn btn-success btn-sm">View</a>
-                          <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                          <a href="#" class="btn btn-danger btn-sm">Remove</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Zakariyah Muniru
-                        </td>
-                        <td>Ward 3</td>
-                        <td> 4 </td>
-                        <td>Yes</td>
-                        <td>
-                          <a href="#" class="btn btn-success btn-sm">View</a>
-                          <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                          <a href="#" class="btn btn-danger btn-sm">Remove</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Zakariyah Muniru
-                        </td>
-                        <td>Ward 3</td>
-                        <td> 4 </td>
-                        <td>Yes</td>
-                        <td>
-                          <a href="#" class="btn btn-success btn-sm">View</a>
-                          <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                          <a href="#" class="btn btn-danger btn-sm">Remove</a>
-                        </td>
-                      </tr>
-
+                      {
+                        agents.map((agent) => {
+                          return(
+                            <>
+                              <tr>
+                                <td>{agent.fullname}</td>
+                                <td>Ward 3</td>
+                                <td> 4 </td>
+                                <td>Yes</td>
+                                <td>
+                                  <a href="#" class="btn btn-success btn-sm">View</a>
+                                  <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                  <a href="#" class="btn btn-danger btn-sm">Remove</a>
+                                </td>
+                              </tr>
+                            </>
+                          )
+                        })
+                      }
                     </tbody>
                   </table>
                 </div>
