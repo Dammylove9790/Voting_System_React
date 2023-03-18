@@ -1,43 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>JAG | Admin</title>
-
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-  <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" />
-  <!-- iCheck -->
-  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css" />
-  <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css" />
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css" />
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
-  <!-- summernote -->
-  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css" />
-</head>
-
+function Homepage() {
+    return (
 <body class="hold-transition layout-top-nav layout-navbar-fixed bg-light">
   <div class="wrapper">
-    <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand-md navbar-dark navbar-dark">
-      <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-dark">
+      <div class="container-fluid px-5">
         <a href="index3.html" class="navbar-brand">
-          <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-            style="opacity: 0.8" />
-          <span class="brand-text font-weight-light">AdminLTE 3</span>
+          <span class="brand-text font-weight-light">JAG Voting System</span>
         </a>
 
         <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -46,59 +15,15 @@
         </button>
 
         <div class="collapse navbar-collapse order-3" id="navbarCollapse">
-          <!-- Left navbar links -->
           <ul class="navbar-nav">
             <li class="nav-item">
               <a href="index3.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                class="nav-link dropdown-toggle">Dropdown</a>
-              <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-                <li><a href="#" class="dropdown-item">Some action </a></li>
-                <li>
-                  <a href="#" class="dropdown-item">Some other action</a>
-                </li>
-
-                <li class="dropdown-divider"></li>
-
-                <!-- Level two dropdown-->
-                <li class="dropdown-submenu dropdown-hover">
-                  <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false" class="dropdown-item dropdown-toggle">Hover for action</a>
-                  <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
-                    <li>
-                      <a tabindex="-1" href="#" class="dropdown-item">level 2</a>
-                    </li>
-
-                    <!-- Level three dropdown-->
-                    <li class="dropdown-submenu">
-                      <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
-                      <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
-                        <li>
-                          <a href="#" class="dropdown-item">3rd level</a>
-                        </li>
-                        <li>
-                          <a href="#" class="dropdown-item">3rd level</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <!-- End Level three -->
-
-                    <li><a href="#" class="dropdown-item">level 2</a></li>
-                    <li><a href="#" class="dropdown-item">level 2</a></li>
-                  </ul>
-                </li>
-                <!-- End Level two -->
-              </ul>
+              <a href="#" class="nav-link">Agent Login</a>
             </li>
           </ul>
 
-          <!-- SEARCH FORM -->
           <form class="form-inline ml-0 ml-md-3">
             <div class="input-group input-group-sm">
               <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" />
@@ -111,9 +36,7 @@
           </form>
         </div>
 
-        <!-- Right navbar links -->
         <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-          <!-- Messages Dropdown Menu -->
           <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
               <i class="fas fa-comments"></i>
@@ -121,7 +44,6 @@
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
               <a href="#" class="dropdown-item">
-                <!-- Message Start -->
                 <div class="media">
                   <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle" />
                   <div class="media-body">
@@ -135,11 +57,9 @@
                     </p>
                   </div>
                 </div>
-                <!-- Message End -->
               </a>
               <div class="dropdown-divider"></div>
               <a href="#" class="dropdown-item">
-                <!-- Message Start -->
                 <div class="media">
                   <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
                   <div class="media-body">
@@ -153,11 +73,9 @@
                     </p>
                   </div>
                 </div>
-                <!-- Message End -->
               </a>
               <div class="dropdown-divider"></div>
               <a href="#" class="dropdown-item">
-                <!-- Message Start -->
                 <div class="media">
                   <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
                   <div class="media-body">
@@ -171,13 +89,11 @@
                     </p>
                   </div>
                 </div>
-                <!-- Message End -->
               </a>
               <div class="dropdown-divider"></div>
               <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
             </div>
           </li>
-          <!-- Notifications Dropdown Menu -->
           <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
               <i class="far fa-bell"></i>
@@ -217,11 +133,8 @@
         </ul>
       </div>
     </nav>
-    <!-- /.navbar -->
 
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
+    <div class="px-3">
       <section class="content-header">
         <div class="container-fluid">
           <div class="row mb-2">
@@ -236,10 +149,8 @@
             </div>
           </div>
         </div>
-        <!-- /.container-fluid -->
       </section>
 
-      <!-- Main content -->
       <section class="content">
         <div class="container-fluid mb-2">
           <h5 class="mb-2">All Party</h5>
@@ -254,11 +165,8 @@
                   <span class="info-box-text">Total Votes:</span>
                   <span class="info-box-number h3">1,410</span>
                 </div>
-                <!-- /.info-box-content -->
               </div>
-              <!-- /.info-box -->
             </div>
-            <!-- /.col -->
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
               <div class="info-box">
                 <span class="info-box-icon">
@@ -269,11 +177,8 @@
                   <span class="info-box-text">Total Votes:</span>
                   <span class="info-box-number h3">1,410</span>
                 </div>
-                <!-- /.info-box-content -->
               </div>
-              <!-- /.info-box -->
             </div>
-            <!-- /.col -->
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
               <div class="info-box">
                 <span class="info-box-icon">
@@ -284,11 +189,8 @@
                   <span class="info-box-text">Total Votes:</span>
                   <span class="info-box-number h3">1,410</span>
                 </div>
-                <!-- /.info-box-content -->
               </div>
-              <!-- /.info-box -->
             </div>
-            <!-- /.col -->
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
               <div class="info-box">
                 <span class="info-box-icon">
@@ -299,11 +201,8 @@
                   <span class="info-box-text">Total Votes:</span>
                   <span class="info-box-number h3">1,410</span>
                 </div>
-                <!-- /.info-box-content -->
               </div>
-              <!-- /.info-box -->
             </div>
-            <!-- /.col -->
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
               <div class="info-box">
                 <span class="info-box-icon">
@@ -314,11 +213,8 @@
                   <span class="info-box-text">Total Votes:</span>
                   <span class="info-box-number h3">1,410</span>
                 </div>
-                <!-- /.info-box-content -->
               </div>
-              <!-- /.info-box -->
             </div>
-            <!-- /.col -->
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-5">
               <div class="info-box">
                 <span class="info-box-icon">
@@ -329,15 +225,10 @@
                   <span class="info-box-text">Total Votes:</span>
                   <span class="info-box-number h3">1,410</span>
                 </div>
-                <!-- /.info-box-content -->
               </div>
-              <!-- /.info-box -->
             </div>
-            <!-- /.col -->
           </div>
-          <!-- /.row -->
         </div>
-        <!-- /.cantainer-fluid -->
         <div class="container-fluid">
           <div class="row">
             <div class="col-12">
@@ -352,7 +243,6 @@
                     Updated Voters Result DataTable
                   </h3>
                 </div>
-                <!-- /.card-header -->
                 <div class="card-body">
                   <table id="example1" class="table table-bordered table-striped">
                     <thead class="thead thead-dark">
@@ -389,20 +279,13 @@
                     </tbody>
                   </table>
                 </div>
-                <!-- /.card-body -->
               </div>
-              <!-- /.card -->
             </div>
-            <!-- /.col -->
           </div>
-          <!-- /.row -->
         </div>
-        <!-- /.container-fluid -->
       </section>
-      <!-- /.content -->
     </div>
-    <!-- /.content-wrapper -->
-    <footer class="main-footer">
+    <footer class="container-fluid p-3 bg-white">
       <strong>Copyright &copy; 2014-2021
         <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
       All rights reserved.
@@ -410,49 +293,10 @@
         <b>Version</b> 3.2.0
       </div>
     </footer>
-
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-      <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
   </div>
-  <!-- ./wrapper -->
-
-  <!-- jQuery -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <!-- jQuery UI 1.11.4 -->
-  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-  <script>
-    $.widget.bridge("uibutton", $.ui.button);
-  </script>
-  <!-- Bootstrap 4 -->
-  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- ChartJS -->
-  <script src="plugins/chart.js/Chart.min.js"></script>
-  <!-- Sparkline -->
-  <script src="plugins/sparklines/sparkline.js"></script>
-  <!-- JQVMap -->
-  <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
-  <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-  <!-- jQuery Knob Chart -->
-  <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
-  <!-- daterangepicker -->
-  <script src="plugins/moment/moment.min.js"></script>
-  <script src="plugins/daterangepicker/daterangepicker.js"></script>
-  <!-- Tempusdominus Bootstrap 4 -->
-  <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-  <!-- Summernote -->
-  <script src="plugins/summernote/summernote-bs4.min.js"></script>
-  <!-- overlayScrollbars -->
-  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-  <!-- AdminLTE App -->
-  <script src="dist/js/adminlte.js"></script>
-  <!-- AdminLTE for demo purposes -->
-  <script src="dist/js/demo.js"></script>
-  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-  <script src="dist/js/pages/dashboard.js"></script>
 </body>
+    
+      )
+    }
 
-</html>
+export default Homepage;
